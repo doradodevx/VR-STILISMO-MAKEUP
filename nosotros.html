@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - VR Estilismo & Makeup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo/logo-vr.jpg" alt="VR Estilismo & Makeup Logo">
+                <div class="logo-text">VR <span>Estilismo & Makeup</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="reseñas.html">Reseñas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <button class="icon-btn" onclick="openModal('cartModal')" aria-label="Carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <a href="login.html" class="icon-btn login-btn" aria-label="Iniciar Sesión">
+                    <i class="fas fa-user"></i>
+                </a>
+                <button class="menu-toggle" aria-label="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre Nosotros</h2>
+
+            <!-- Misión y Visión -->
+            <div class="mission-vision">
+                <div class="mission-card">
+                    <h3>Nuestra Misión</h3>
+                    <p>En VR Estilismo & Makeup, nos comprometemos a brindar servicios de belleza y estética de la más alta calidad, utilizando técnicas profesionales y productos premium. Nuestro objetivo es realzar la belleza natural de cada cliente, creando experiencias personalizadas que generen confianza y satisfacción.</p>
+                    <p style="margin-top: 1rem;">Trabajamos con dedicación y pasión para que cada visita a nuestro salón sea una experiencia única e inolvidable, donde nuestros clientes se sientan valorados y especiales.</p>
+                </div>
+                <div class="vision-card">
+                    <h3>Nuestra Visión</h3>
+                    <p>Ser reconocidos como el salón de belleza líder en innovación y excelencia, donde cada cliente se sienta único y valorado. Aspiramos a establecer nuevos estándares en la industria de la belleza, combinando tradición y modernidad para ofrecer servicios excepcionales.</p>
+                    <p style="margin-top: 1rem;">Buscamos expandir nuestra presencia mientras mantenemos nuestro compromiso con la calidad, la innovación y el servicio personalizado que nos caracteriza.</p>
+                </div>
+            </div>
+
+            <!-- Nuestro Equipo -->
+            <h2 class="section-title" style="margin-top: 4rem;">Nuestro Equipo</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Victoria Rodríguez" class="team-card-image">
+                    <div class="team-card-content">
+                        <h3>Victoria Rodríguez</h3>
+                        <p class="team-card-role">Directora y Maquilladora Profesional</p>
+                        <p class="team-card-bio">Con más de 10 años de experiencia en maquillaje profesional, Victoria es especialista en maquillaje de novias y eventos. Certificada por las mejores academias de belleza internacionales.</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400" alt="Rosa Martínez" class="team-card-image">
+                    <div class="team-card-content">
+                        <h3>Rosa Martínez</h3>
+                        <p class="team-card-role">Estilista Senior</p>
+                        <p class="team-card-bio">Especialista en coloración y técnicas avanzadas como balayage y mechas. Rosa tiene 8 años de experiencia y está certificada en las últimas tendencias de color.</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400" alt="Carmen López" class="team-card-image">
+                    <div class="team-card-content">
+                        <h3>Carmen López</h3>
+                        <p class="team-card-role">Especialista en Uñas</p>
+                        <p class="team-card-bio">Experta en manicure, pedicure y diseños artísticos. Carmen se mantiene actualizada con las últimas tendencias en nail art y técnicas de esmaltado.</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Carlos Sánchez" class="team-card-image">
+                    <div class="team-card-content">
+                        <h3>Carlos Sánchez</h3>
+                        <p class="team-card-role">Barbero y Estilista</p>
+                        <p class="team-card-bio">Especialista en cortes masculinos y femeninos modernos. Carlos combina técnicas clásicas con estilos contemporáneos para crear looks únicos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto del Equipo Principal -->
+            <div class="team-main-photo">
+                <h3 class="section-title" style="font-size: 2rem; margin-bottom: 2rem;">Nuestro Equipo Completo</h3>
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1200" alt="Equipo VR Estilismo & Makeup">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>VR Estilismo & Makeup</h3>
+                <p>Tu belleza es nuestra pasión. Transformamos tu estilo con profesionalismo y dedicación.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@vrestilismo.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Calle Principal 123, Ciudad</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Horarios</h3>
+                <ul>
+                    <li>Lunes - Viernes: 9:00 AM - 7:00 PM</li>
+                    <li>Sábados: 9:00 AM - 6:00 PM</li>
+                    <li>Domingos: 10:00 AM - 4:00 PM</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Métodos de Pago</h3>
+                <div class="payment-methods">
+                    <div class="payment-icon">VISA</div>
+                    <div class="payment-icon">MC</div>
+                    <div class="payment-icon">AMEX</div>
+                    <div class="payment-icon">EF</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 VR Estilismo & Makeup. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>Carrito de Compras</h2>
+            <p>Funcionalidad próximamente disponible.</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
